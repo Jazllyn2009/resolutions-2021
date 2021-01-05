@@ -1,0 +1,503 @@
+* {
+    box-sizing: border-box;
+  }
+
+  .header{
+     border: 10px solid black;
+  }
+  /*https://st2.depositphotos.com/1216158/6982/v/950/depositphotos_69820915-stock-illustration-dotted-pop-art-background.jpg*/
+  /* Add a gray background color with some padding */
+  body {
+    font-family: Arial;
+    padding: 20px;
+/*background-color: rgb(250, 201, 217);*/
+background-color: skyblue;
+  background-size: 100% 100% 100% 100% 100% 100% ;
+}
+
+
+  
+  /* Header/Blog Title */
+  .header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: white;
+    
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: lightblue;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .mycard {
+  background-color: white;
+    background-size: 100%;
+  padding: 20px;
+     margin-top: 20px;
+     border: 2px solid black;
+  }
+
+  .card{
+    padding: 20px;
+    margin-top: 20px;
+    background-color: white;
+    border: 2px solid black;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+   background-color: #fff;
+   border: 2px solid black;
+    margin-top: 20px;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  #img{
+      width: 870px;
+      text-align: center;
+  }
+
+  #about{
+      width: 215px;
+   height: 260px;
+      
+  }
+
+  .header{
+      background-image: url(https://images.fineartamerica.com/images-medium-large-5/halftone-background-pop-art-design-bobnevv.jpg);
+ 
+    }
+
+  #upload{
+      display: flex;
+      flex-direction: row;
+  }
+
+  h2{
+      color: black;
+      font-style: italic;
+  }
+
+  p{
+      font-style: inherit;
+  }
+
+  #lala{
+      color: black;
+  }
+
+  #what{
+      font-style: italic;
+  }
+
+
+#codepen{
+    width: 70px;
+}
+
+#github{
+    width: 100px;
+    height: 70px;
+}
+
+  #my{
+      width: 900px;
+  }
+
+
+
+
+
+
+
+  body {
+
+   
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;}
+    
+    h1 {
+      margin: 0;
+      color: black;
+      padding-bottom: 6rem;
+      grid-column: 1;
+      grid-row: 1;
+      z-index: 1;
+      font-family: 'Teko', sans-serif;
+      font-size: 10rem;
+      text-transform: uppercase;
+      animation: glow 2s ease-in-out infinite alternate;
+      text-align: center;
+    }
+    a {
+      font-family: 'Teko', sans-serif;
+   
+      grid-column: 1;
+      grid-row: 1;
+      align-self: end;
+      justify-self: center;
+      padding-bottom: 1rem;
+    }
+    
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 20px pink;
+      }
+      to {
+        text-shadow: 0 0 30px black, 0 0 10px pink;
+      }
+    }
+  
+
+
+
+
+
+
+    @import url("https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap");
+
+body,
+html {
+  background: radial-gradient(
+    circle,
+    
+  );
+  height: 100%;
+}
+
+#ohn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Luckiest Guy", cursive;
+}
+
+#h2 {
+  margin: 0;
+ font-size: 3em;
+  padding: 0;
+  color: yellow;
+  text-shadow: 0 0.1em 20px rgba(0, 0, 0, 1), 0.05em -0.03em 0 rgba(0, 0, 0, 1),
+    0.05em 0.005em 0 rgba(0, 0, 0, 1), 0em 0.08em 0 rgba(0, 0, 0, 1),
+    0.05em 0.08em 0 rgba(0, 0, 0, 1), 0px -0.03em 0 rgba(0, 0, 0, 1),
+    -0.03em -0.03em 0 rgba(0, 0, 0, 1), -0.03em 0.08em 0 rgba(0, 0, 0, 1), -0.03em 0 0 rgba(0, 0, 0, 1);}
+  span {
+    transform: scale(0.9);
+    display: inline-block;
+  }
+  span:first-child {
+    animation: bop 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards infinite
+      alternate;
+  }
+  span:last-child {
+    animation: bopB 1s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards
+      infinite alternate;
+  }
+
+
+@keyframes bop {
+  0% {
+    transform: scale(0.9);
+  }
+  50%,
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes bopB {
+  0% {
+    transform: scale(0.9);
+  }
+  80%,
+  100% {
+    transform: scale(1) rotateZ(-3deg);
+  }
+}
+
+
+
+
+#h5{
+    font-size: 1em;
+}
+
+
+h5{
+    margin: 0;
+    font-size: 10em;
+     padding: 0;
+     color: black;
+     text-shadow: 0 0.1em 20px skyblue;}
+     span {
+       transform: scale(0.9);
+       display: inline-block;
+}
+
+
+#lala{
+    
+    color: black;
+    text-shadow: skyblue;
+}
+
+
+
+.loading {
+    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+    text-transform:uppercase;
+    
+    width:150px;
+    text-align:center;
+    line-height:50px;
+    
+    
+    left:0;right:0;top:50%;
+    margin:auto;
+    transform:translateY(-50%);
+  }
+  
+  .loading span {
+    position:relative;
+    z-index:999;
+    color:black;
+  }
+  .loading:before {
+    content:'';
+    background:skyblue;
+    width:128px;
+    height:36px;
+    display:block;
+    position:absolute;
+    top:0;left:0;right:0;bottom:0;
+    margin:auto;
+    
+    animation:2s loadingBefore infinite ease-in-out;
+  }
+  
+  @keyframes loadingBefore {
+    0%   {transform:translateX(-14px);}
+    50%  {transform:translateX(14px);}
+    100% {transform:translateX(-14px);}
+  }
+  
+  
+  .loading:after {
+    content:'';
+    background:pink;
+    width:14px;
+    height:60px;
+    display:block;
+    position:absolute;
+    top:0;left:0;right:0;bottom:0;
+    margin:auto;
+    opacity:.5;
+    
+    animation:2s loadingAfter infinite ease-in-out;
+  }
+  
+  @keyframes loadingAfter {
+    0%   {transform:translateX(-50px);}
+    50%  {transform:translateX(50px);}
+    100% {transform:translateX(-50px);}
+  }
+
+
+
+
+  #ohno{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+
+  }
+  
+  #p{
+    position: relative;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 4px;
+    overflow: hidden;
+  
+    background-repeat: no-repeat;
+    background-size: 80%;
+   
+  }
+
+  #aboutsme{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-size: 17px;
+  }
+
+  #meisme{
+      font-size: 21px;
+      font-family: cursive;
+      text-shadow: 2px 2px skyblue;
+  }
+
+  a{
+      text-decoration: none;
+  }
+
+  #mydiv{
+      height: 530px;
+      width: 260px;
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+
+  #meabout{
+      font-family: fantasy;
+  }
+
+  #mytext{
+      font-family: cursive;
+  }
+
+  h5{
+      font-size: 2em;
+   
+      background-repeat: no-repeat;
+     
+      animation: animate 3s linear infinite;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: #fff(255, 255, 255, 0);
+  }
+
+  #mimi{
+      font-family: cursive;
+      font-size: 20px;
+  }
+
+  #my{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  #momo{
+      font-family: initial;
+      font-size: 2em;
+  }
+
+  #meabout{
+      font-style: italic;
+  }
+.mycard{
+    padding: 10px;
+}
+
+#wow{
+font-size: 1em;
+font-weight: 700;
+}
+
+
+
+form {
+  margin: auto;
+  height: 800px;
+}
+
+label {
+  font-weight: bold;
+
+}
+
+input,
+textarea {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  display: block;
+  background-color: #ACE7FF;
+  margin: auto;
+  width: 150px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 20px;
+  font-weight: bold;
+ 
+}
+
+input[type="submit"]:hover{
+  -webkit-box-shadow: 17px 6px 14px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    17px 6px 14px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         17px 6px 14px 0px rgba(50, 50, 50, 0.75);
+  transform: scale(1.1);
+}
+
+
+
+.whycard{
+  display: flex;
+  padding: 20px;
+    margin-top: 20px;
+    background-color: white;
+   text-align: center;
+   width: 700px;
+   height: 620px;
+   justify-content: center;
+   position: relative;
+   border: 3px solid black;
+   margin-left: 350px;
+}
+
+#about-me{
+  font-size: 50px;
+  
+}
+
+#forme{
+  margin-right: 42px;
+
+}
